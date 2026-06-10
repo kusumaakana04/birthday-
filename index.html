@@ -135,6 +135,49 @@
                     <div class="imageCute">
                         <img src="heart.png" alt="">
                     </div>
+                    <!-- Background Video -->
+<video autoplay muted loop id="bg-video">
+    <source src="birthday-video.mp4" type="video/mp4">
+</video>
+
+<!-- Birthday Video Section -->
+<div class="birthday-video-container">
+    <video width="400" controls autoplay loop>
+        <source src="birthday-video.mp4" type="video/mp4">
+    </video>
+</div>
+
+<style>
+#bg-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+#wrapper{
+    position: relative;
+    z-index: 1;
+}
+
+.birthday-video-container{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.birthday-video-container video{
+    width: 300px;
+    border-radius: 15px;
+}
+</style>
                 </div>
                 <div class="card2">
                     <div class="card2-content">
